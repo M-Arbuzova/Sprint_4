@@ -1,7 +1,6 @@
-import Pages.MainPage;
-import Pages.OrderPage;
+import ru.yandex.praktikum.pages.MainPage;
+import ru.yandex.praktikum.pages.OrderPage;
 import org.hamcrest.MatcherAssert;
-import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;

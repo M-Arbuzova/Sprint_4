@@ -5,17 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a6e0dc-1b87-4212-8430-db5d288ca0af" name="Changes" comment="Add Develop.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/MainPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Для ревьюера" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/MainPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/QuestionAnswerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuestionAnswerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,7 +48,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MHOa7gf7Eu4G4EYArsyx6ov8FF" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,10 +60,13 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/cygwin64/home/Administrator/Sprint_4"
+    "last_opened_file_path": "C:/cygwin64/home/Administrator/Sprint_4",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.QuestionAnswerTest">
     <configuration name="CreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <option name="PACKAGE_NAME" value="" />
@@ -96,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.QuestionAnswerTest" />
+        <item itemvalue="JUnit.CreateOrderTest" />
         <item itemvalue="JUnit.QuestionAnswerTest.shouldQuestionAnswer" />
         <item itemvalue="JUnit.QuestionAnswerTest.QuestionAnswerTest1" />
         <item itemvalue="JUnit.QuestionAnswerTest.canUseQuestionAnswer" />
-        <item itemvalue="JUnit.QuestionAnswerTest" />
-        <item itemvalue="JUnit.CreateOrderTest" />
       </list>
     </recent_temporary>
   </component>

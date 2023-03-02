@@ -1,13 +1,11 @@
-package Pages;
+package ru.yandex.praktikum.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
-
 public class OrderPage {
     private WebDriver driver;
-
     private final By inputNameClient = By.xpath("//input[@placeholder='* Имя']");
     private final By inputSurnameClient = By.xpath("//input[@placeholder='* Фамилия']");
     private final By inputAdressClient = By.xpath("//input[@placeholder='* Адрес: куда привезти заказ']");
@@ -29,7 +27,6 @@ public class OrderPage {
     public OrderPage(WebDriver driver) {
         this.driver = driver;
     }
-
     public void setNameClient(String text) {
         driver.findElement(inputNameClient).sendKeys(text);
     }
@@ -52,12 +49,10 @@ public class OrderPage {
     public void setDropDateDelivery(String text) {
         driver.findElement(dropDateDelivery).click();
         driver.findElement(dropDateDelivery).sendKeys(text, Keys.ENTER);
-
     }
     public void setPeriodRent(int day){
         driver.findElement(btnPeriodRent).click();
         driver.findElements(dropListPeriodRent).get(day).click();
-
     }
     public void setColorCheckbox(String color) {
             if ("black".equals(color)) {
@@ -69,7 +64,6 @@ public class OrderPage {
     public void setInputCommentCourier(String comments) {
         driver.findElement(inputCommentCourier).sendKeys(comments);
     }
-
     public void clickBtnReturnStep() {
         driver.findElement(btnReturnStep).click();
     }
@@ -82,9 +76,21 @@ public class OrderPage {
     public void clickBtnCreateOrderNo() {
         driver.findElement(btnCreateOrderNo).click();
     }
-
     //получаем текст окна после оформления заказа
     public String textOrderPlaced(){
         return driver.findElement(containerOrderPlaced).getText();
+    }
+    public void setInfoAboutClient(String name, String surname, String address, String metro, String phone) {
+        setNameClient(name);
+        setSurnameClient(surname);
+        setAdressClient(address);
+        setListMetroStation(metro);
+        setInputPhoneNumberClient(phone);
+    }
+    public void setInfoAboutDelivery(String startDate, int orderDays, String color, String comments) {
+        setDropDateDelivery(startDate);
+        setPeriodRent(orderDays);
+        setColorCheckbox(color);
+        setInputCommentCourier(comments);
     }
 }
