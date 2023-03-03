@@ -4,8 +4,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import ru.yandex.praktikum.pages.MainPage;
 
-import java.time.Duration;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)

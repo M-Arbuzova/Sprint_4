@@ -1,11 +1,10 @@
-import org.hamcrest.MatcherAssert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import ru.yandex.praktikum.pages.MainPage;
 import ru.yandex.praktikum.pages.OrderPage;
 
-import static org.hamcrest.CoreMatchers.containsString;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class CreateOrderTest extends TestBase {
@@ -66,6 +65,6 @@ public class CreateOrderTest extends TestBase {
         orderPage.clickBtnCreateOrder();
         orderPage.clickBtnCreateOrderYes();
         //если тест проходит, то ожидаем надпись"Заказ оформлен" и сравниваем ее с текущим текстом на странице после оформления заказа
-        MatcherAssert.assertThat(orderPage.textOrderPlaced(), containsString(expectedOrderPlaced));
+        assertEquals(expectedOrderPlaced, orderPage.textOrderPlaced());
     }
 }
