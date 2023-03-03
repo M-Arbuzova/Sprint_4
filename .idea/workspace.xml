@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a6e0dc-1b87-4212-8430-db5d288ca0af" name="Changes" comment="Add Develop.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/MainPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Для ревьюера" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/MainPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/OrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/OrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/yandex/praktikum/pages/OrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CreateOrderTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/QuestionAnswerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/QuestionAnswerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +58,12 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "last_opened_file_path": "C:/cygwin64/home/Administrator/Sprint_4",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.QuestionAnswerTest">
+  <component name="RunManager" selected="JUnit.CreateOrderTest">
     <configuration name="CreateOrderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,31 +82,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionAnswerTest.QuestionAnswerTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionAnswerTest.answerIsMatchDocumentation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="QuestionAnswerTest" />
-      <option name="METHOD_NAME" value="QuestionAnswerTest1" />
+      <option name="METHOD_NAME" value="answerIsMatchDocumentation" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionAnswerTest.canUseQuestionAnswer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionAnswerTest.headerQuestionIsClickable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="QuestionAnswerTest" />
-      <option name="METHOD_NAME" value="canUseQuestionAnswer" />
+      <option name="METHOD_NAME" value="headerQuestionIsClickable" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuestionAnswerTest.shouldQuestionAnswer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="QuestionAnswerTest.textAnswerisDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Sprint_4" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="QuestionAnswerTest" />
-      <option name="METHOD_NAME" value="shouldQuestionAnswer" />
+      <option name="METHOD_NAME" value="textAnswerisDisplayed" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -117,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.QuestionAnswerTest" />
         <item itemvalue="JUnit.CreateOrderTest" />
-        <item itemvalue="JUnit.QuestionAnswerTest.shouldQuestionAnswer" />
-        <item itemvalue="JUnit.QuestionAnswerTest.QuestionAnswerTest1" />
-        <item itemvalue="JUnit.QuestionAnswerTest.canUseQuestionAnswer" />
+        <item itemvalue="JUnit.QuestionAnswerTest" />
+        <item itemvalue="JUnit.QuestionAnswerTest.textAnswerisDisplayed" />
+        <item itemvalue="JUnit.QuestionAnswerTest.answerIsMatchDocumentation" />
+        <item itemvalue="JUnit.QuestionAnswerTest.headerQuestionIsClickable" />
       </list>
     </recent_temporary>
   </component>

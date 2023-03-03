@@ -1,17 +1,17 @@
-import ru.yandex.praktikum.pages.MainPage;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import ru.yandex.praktikum.pages.MainPage;
+
+import java.time.Duration;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
-public class QuestionAnswerTest extends TestBase{
+public class QuestionAnswerTest extends TestBase {
     private final int index;
     private final boolean visibleAnswer;
-
     private final String answer;
 
     public QuestionAnswerTest(int index, boolean visibleAnswer, String answer) {
@@ -20,7 +20,7 @@ public class QuestionAnswerTest extends TestBase{
         this.answer = answer;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "{index}: Тестовые данные: дополнение URL ссылки{0}, текст виден {1}, текст соотв. ТЗ {2}")
     public static Object[][] checkQuestionAnswer() {
         return new Object[][]{
                 {0, true, "Сутки — 400 рублей. Оплата курьеру — наличными или картой."},
@@ -31,21 +31,36 @@ public class QuestionAnswerTest extends TestBase{
                 {5, true, "Самокат приезжает к вам с полной зарядкой. Этого хватает на восемь суток — даже если будете кататься без передышек и во сне. Зарядка не понадобится."},
                 {6, true, "Да, пока самокат не привезли. Штрафа не будет, объяснительной записки тоже не попросим. Все же свои."},
                 {7, true, "Да, обязательно. Всем самокатов! И Москве, и Московской области."},
-
-
         };
     }
+
     @Test
-    public void canUseQuestionAnswer() {
+    public void headerQuestionIsClickable() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickAcceptCookie();
         mainPage.findQuestionAnswerSection();
         //проверяем, что текст вопроса кликабелен
         Assert.assertTrue(mainPage.canClickQuestion(index));
+    }
+
+    @Test
+    public void textAnswerisDisplayed() {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.clickAcceptCookie();
+        mainPage.findQuestionAnswerSection();
+        mainPage.canClickQuestion(index);
         //проверяем, что текст ответа отображается
         Assert.assertTrue(mainPage.textAnswerIsDisplayed(index));
+    }
+
+    @Test
+    public void answerIsMatchDocumentation() {
+        MainPage mainPage = new MainPage(driver);
+        mainPage.clickAcceptCookie();
+        mainPage.findQuestionAnswerSection();
+        mainPage.canClickQuestion(index);
+        mainPage.textAnswerIsDisplayed(index);
         //проверяем, что текст ответа соответствует ТЗ (тем текстам, которые сейчас на сайте)
         assertEquals("Ожидаемый результат: текст на экране соответствует ТЗ", mainPage.showTextAnswer(index), answer);
-
     }
 }
