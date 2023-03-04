@@ -64,7 +64,7 @@ public class CreateOrderTest extends TestBase {
         //нажимаем кнопку оформить заказ и кнопку "Да"
         orderPage.clickBtnCreateOrder();
         orderPage.clickBtnCreateOrderYes();
-        //если тест проходит, то ожидаем надпись"Заказ оформлен" и сравниваем ее с текущим текстом на странице после оформления заказа
+        //если тест проходит, то ожидаем надпись "Заказ оформлен" и сравниваем ее с текущим текстом на странице после оформления заказа
         assertEquals(expectedOrderPlaced, orderPage.textOrderPlaced());
     }
 }

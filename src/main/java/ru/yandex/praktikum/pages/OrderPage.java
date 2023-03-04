@@ -94,7 +94,6 @@ public class OrderPage {
     //получаем текст окна после оформления заказа
     public String textOrderPlaced() {
         return driver.findElement(containerOrderPlaced).getText().substring(0, 14);
-
     }
 
     public void setInfoAboutClient(String name, String surname, String address, String metro, String phone) {

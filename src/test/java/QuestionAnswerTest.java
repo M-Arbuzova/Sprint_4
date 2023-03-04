@@ -42,7 +42,7 @@ public class QuestionAnswerTest extends TestBase {
     }
 
     @Test
-    public void textAnswerisDisplayed() {
+    public void textAnswerIsDisplayed() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickAcceptCookie();
         mainPage.findQuestionAnswerSection();
