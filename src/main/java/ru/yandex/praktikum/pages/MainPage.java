@@ -11,7 +11,7 @@ public class MainPage {
     private final By questionAnswerSection = By.xpath(".//div[text()='Вопросы о важном']"); // секция вопросов и ответов
     private final String questionLocator = "accordion__heading-"; // начало пути заголовка вопроса
     private final String textAnswerLocator = "accordion__panel-"; //начало пути заголовка ответа
-    private final By btnCookie = By.className("App_CookieButton__3cvqF"); //кнопка куки
+    private final By btnCookie = By.className("App_CookieButton__3cvqF"); //кнопка принятия куки
     private final WebDriver driver;
 
     public MainPage(WebDriver driver) {

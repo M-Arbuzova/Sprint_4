@@ -4,8 +4,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import ru.yandex.praktikum.pages.MainPage;
 
-import java.time.Duration;
-
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
@@ -44,7 +42,7 @@ public class QuestionAnswerTest extends TestBase {
     }
 
     @Test
-    public void textAnswerisDisplayed() {
+    public void textAnswerIsDisplayed() {
         MainPage mainPage = new MainPage(driver);
         mainPage.clickAcceptCookie();
         mainPage.findQuestionAnswerSection();
